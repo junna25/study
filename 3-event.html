@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <style>
+        #msg {
+            text-align: center;
+            font-size: 60px;
+            color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div style = "text-align: center;">
+    <p><button>PUSH!</button></p>
+    </div>
+    <p id="msg"></p>
+    <script>
+        function showMsg(){
+            let msgDom = document.querySelector("#msg");
+            msgDom.innerHTML = "ボタンが押されました";
+        }
+        let buttonDom = document.querySelector("button");
+        buttonDom.addEventListener("click", showMsg);
+    </script>
+</body>
+</html>
